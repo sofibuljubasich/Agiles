@@ -1,18 +1,34 @@
 class Ahorcado:
     def __init__(self):
         self.palabraAdivinar = "hola"
-    
+        self.vidas = 6
+        self.letras_incorrectas = []
+        self.palabraAhocardo = ["_","_","_","_"]
+        
+
     def get_palabra(self):
         return self.palabraAdivinar
-    
+        
     def arriesgar_palabra(self,palabra):
         return palabra == self.palabraAdivinar
     
     def arriesgar_letra(self,letra):
-        return (letra in self.palabraAdivinar)
+        if (letra in self.palabraAdivinar):
+            posicion = self.devolver_posicion_letra(letra)
+            self.palabraAhocardo.insert(posicion,letra)
+            print(self.palabraAhocardo)
+            return True
+        else:
+            self.descontar_vida()
+            self.letras_incorrectas.append(letra)
+            return False
     
     def devolver_posicion_letra(self,letra):
-        #Se le suma 1 para que la posicion sea intituiva 
-        # para el jugador
-        return self.palabraAdivinar.find(letra)+1 
+        return self.palabraAdivinar.find(letra)
+    
+    def descontar_vida(self):
+        self.vidas-=1
+
+    def mostrar_letras_incorrectas(self):
+        return self.letras_incorrectas
     
