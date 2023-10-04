@@ -13,16 +13,23 @@ class Ahorcado:
         return palabra == self.palabraAdivinar
     
     def arriesgar_letra(self,letra):
-        if (letra in self.palabraAdivinar):
-            posicion = self.devolver_posicion_letra(letra)
-            self.palabraAhocardo.insert(posicion,letra)
-            print(self.palabraAhocardo)
-            return True
-        else:
-            self.descontar_vida()
-            self.letras_incorrectas.append(letra)
-            return False
+        if not self.chequear_letra_repetida(letra):
+            if (letra in self.palabraAdivinar):
+                posicion = self.devolver_posicion_letra(letra)
+                self.palabraAhocardo[posicion]=letra
+                print(self.palabraAhocardo)
+                return True
+            else:
+                self.descontar_vida()
+                self.letras_incorrectas.append(letra)
+                return False
     
+    def chequear_letra_repetida(self,letra):
+        if ((letra in self.letras_incorrectas) or (letra in self.palabraAhocardo)):
+            return True
+        else:            
+            return False
+        
     def devolver_posicion_letra(self,letra):
         return self.palabraAdivinar.find(letra)
     
