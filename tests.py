@@ -29,7 +29,7 @@ class TestAhorcado(unittest.TestCase):
         self.assertGreaterEqual(juego.devolver_posicion_letra("o"),0)
     
     def test_letra_correcta_no_pierde_intento(self):
-        # revisar test  
+        # revisar test el martes 17
         juego = Ahorcado() 
         juego.vidas = 6
         juego.palabraAdivinar= "hola"
