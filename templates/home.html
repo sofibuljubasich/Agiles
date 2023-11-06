@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+{% block content %}
+  <form action="{{ url_for('nuevo_juego') }}" class="form-inline">
+    <div class="form-group vspace">
+     <p>
+      "A crowd begins to gather, they can't wait to see some real"
+      "justice. There's just one thing, you aren't a real criminal."
+      "No, no. You're the wrong time, wrong place type. You may think"
+      "you're dead, but it's not like that at all. Yes, yes. You've"
+       "got a chance to live. All you've gotta do is guess the right"
+      "words and you can live to see another day. But don't get so"
+      "happy yet. If you make 6 wrong guess, YOU'RE TOAST! 
+     </p>
+      <button class="btn btn-primary btn-lg" type="submit">Jugar!</button>
+    </div>
+  </form>
+
+ 
+{% endblock %}
