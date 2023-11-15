@@ -3,10 +3,10 @@ from selenium import webdriver
 
 @given('Ingreso a la pagina del juego')
 def abrirPagina(context):
-    context.driver = webdriver.Chrome("D:\Docs\Agiles\UI-TESTS\chromedriver.exe")
+    context.driver = webdriver.Chrome(executable_path=r'D:\\Docs\\Agiles\\UI-TESTS\\chromedriver.exe')
     context.driver.get("http://localhost:5000/")
 
-@when(u'Inicializa el juego')
+@when('Comienza el juego')
 def step_impl(context):
     raise NotImplementedError(u'STEP: When Inicializa el juego')
 

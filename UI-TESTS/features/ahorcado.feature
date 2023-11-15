@@ -2,7 +2,7 @@ Feature: Hangman Game
 
     Scenario: Empezar nuevo juego
         Given Ingreso a la pagina del juego
-        When Inicializa el juego
+        When Comienza el juego
         Then la palabra a adivinar debe mostrarse con guiones
         And el numero de vidas debe ser 6
         And las letras incorrectas deben estar vacias
