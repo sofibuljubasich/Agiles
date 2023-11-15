@@ -1,6 +1,7 @@
 from main import Ahorcado
 import unittest
 
+
 class TestAhorcado(unittest.TestCase):
 
     def test_arriesgar_palabra_correcta(self):
@@ -15,6 +16,8 @@ class TestAhorcado(unittest.TestCase):
 
     def test_arriesgar_letra_correcta(self):
         juego = Ahorcado() 
+        juego.iniciar()
+
         juego.palabraAdivinar="hola"
         self.assertTrue(juego.arriesgar_letra("l"))
     
@@ -23,6 +26,8 @@ class TestAhorcado(unittest.TestCase):
         juego.palabraAdivinar="hola"
         self.assertFalse(juego.arriesgar_letra("k"))
     
+
+    #Me parece que no es necesaario
     def test_devolver_posicion_letra_correcta(self):
         juego = Ahorcado() 
         juego.palabraAdivinar="hola"
@@ -34,6 +39,7 @@ class TestAhorcado(unittest.TestCase):
         juego.vidas = 6
         juego.palabraAdivinar= "hola"
         juego.palabraAhocardo = ["_","o","_","_"]
+        juego.arriesgar_letra("o")
         self.assertEqual(juego.vidas,6)
     
     def test_letra_incorrecta_pierde_primer_intento(self):
@@ -64,14 +70,14 @@ class TestAhorcado(unittest.TestCase):
         juego.palabraAdivinar= "hola"
         juego.letras_incorrectas = ["x"]
         
-        self.assertTrue(juego.chequear_letra_repetida("x"))
+        self.assertTrue(juego.pertenece_incorrectas("x"))
 
     def test_letra_correcta_repetida(self):
         juego = Ahorcado()
         juego.palabraAdivinar= "hola"
         juego.palabraAhocardo = ["_","_","_","a"]
-
-        self.assertTrue(juego.chequear_letra_repetida("a"))
+       
+        self.assertTrue(juego.pertenece_palabra("a"))
 
     
 if __name__ == '__main__':

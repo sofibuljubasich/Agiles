@@ -23,8 +23,7 @@ def index():
     
     return render_template('jugar.html',palabra=session['palabra'],palabraAhorcado=session['palabraAhorcado'],vidas=session['vidas'],incorrectas=session['incorrectas'])
 
-#def home():
- #   return render_template('home.html')
+
 
 @app.route('/nuevo_juego')
 def nuevo_juego():
@@ -40,7 +39,9 @@ def nuevo_juego():
 @app.route('/adivinar', methods=['POST'])
 def adivinar():
 
-    input = request.form['input']
+    input = request.form['input'].lower()
+
+
 
     if juego.arriesgar(input):
         if juego.gano():
@@ -62,12 +63,10 @@ def adivinar():
 
 
     
-
-
-
-@app.route("/play_again", methods=["POST"])
+@app.route("/play_again", methods=["GET","POST"])
 def play_again():
     iniciar_juego()
     return redirect(url_for("index"))
+
 if __name__ == "__main__":
     app.run(debug=True)
