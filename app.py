@@ -39,7 +39,7 @@ def nuevo_juego():
 @app.route('/adivinar', methods=['POST'])
 def adivinar():
 
-    input = request.form['input'].lower()
+    input = request.form['input']
 
 
 
