@@ -1,5 +1,6 @@
 import random
-LP = ["python", "flask", "hangman", "web", "programming"]
+LP = ["agiles", "lenguaje", "framework", "assert", "metodologia","feature","aceptance","incremental"]
+#LP = ["python", "flask", "hangman", "web", "programming"]
 
 class Ahorcado:
     def __init__(self):

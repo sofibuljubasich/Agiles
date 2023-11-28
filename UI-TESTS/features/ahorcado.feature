@@ -6,28 +6,49 @@ Feature: Hangman Game
       Then la palabra a adivinar debe mostrarse con guiones
       And el numero de vidas debe ser 6
       And las letras incorrectas deben estar vacias
-  
-  Scenario: Adivinar una letra correcta
-      Given La palabra a adivinar del juego es "agiles"
-      When El jugador adivina la letra "g"
-      Then Se muestra "["_","G","_","_","_","_"]"
 
-  Scenario: Adivinar una letra incorrecta
-      Given La palabra a adivinar del juego es "python"
-      When El jugador adivina la letra "u"
+  Scenario Outline: Adivinar una letra correcta
+      Given El jugador empieza el juego
+      When El jugador ingresa la letra "<letra>"
+      Then La palabra se actualiza y contiene la "<letra>"
+      And el numero de vidas debe ser 6
+      And las letras incorrectas deben estar vacias
+
+
+    
+    Examples: 
+      | letra |                       
+      | a |
+      | e |
+
+  Scenario Outline: Ingresar una letra incorrecta
+      Given El jugador empieza el juego
+      When El jugador ingresa la letra "<letra>"
       Then Pierde una vida
-      And Se muestra como letra incorrecta "u"
+      And Se muestra como letra incorrecta "<letra>"
 
-  Scenario: Gana el juego
-    Given La palabra a adivinar del juego es "puerta"
-    When El jugador adivina las letras "P", "U", "E", "R", "T", "A"
-    Then Gana el juego
-    And Muestra mensaje ganador con la palabra a adivinar
-  
+    Examples: 
+      | letra |                       
+      | ñ |
+      | x |
+
+ 
   Scenario: Pierde el juego
-    Given La palabra a adivinar del juego es "puerta"
-    When El jugador adivina 6 letras incorrectas
+    Given El jugador empieza el juego
+    When El jugador ingresa 6 caracteres incorrectos
     Then Pierde el juego
-    And Muestra el mensaje de que perdio con la palabra a adivinar
+    Then Muestra el mensaje de que perdio con la palabra a adivinar
+  
+  Scenario Outline: Reinicia el juego
+    Given El jugador empieza el juego
+    And El jugador ingresa la letra "<letra>"
+    When El jugador reinicia el juego
+    Then la palabra a adivinar debe mostrarse con guiones
+    And el numero de vidas debe ser 6
+    And las letras incorrectas deben estar vacias
+  Examples: 
+      | letra |                       
+      | a |
+      | x |
 
 

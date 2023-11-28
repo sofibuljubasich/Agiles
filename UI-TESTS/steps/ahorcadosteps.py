@@ -3,13 +3,17 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
+LOST_URL = "http://localhost:5000/adivinar"
+LOST_MESSAGE = "Oh no, Perdiste!"
+PALABRA_LOST_MESSAGE = "No pudiste adivinar la palabra: "
+
 @given('Ingreso a la pagina del juego')
 def abrirPagina(context):
     context.driver = webdriver.Chrome()
     #context.driver.get("http://localhost:5000/")
 
 
-@when(u'Comienza el juego')
+@when('Comienza el juego')
 def comienza_juego(context):
     context.driver.get("http://localhost:5000/")
 
@@ -28,10 +32,10 @@ def palabra_con_guiones(context):
 
 
 @then('el numero de vidas debe ser 6')
-def cantidad_vidas(context):
+def mantiene_vidas(context):
     h2 = context.driver.find_element(By.ID,'vidas').text
     print(h2)
-    digitos = ''.join(caracter for caracter in h2 if caracter.isdigit())
+    digitos = int(''.join(caracter for caracter in h2 if caracter.isdigit()))
 
     print(digitos)
 
@@ -47,71 +51,86 @@ def incorrectas_vacias(context):
     incorrectas = eval(texto[inicio_lista:])
     assert len(incorrectas) == 0
 
-@given(u'La palabra a adivinar del juego es "agiles"')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Given La palabra a adivinar del juego es "agiles"')
 
 
-@when(u'El jugador adivina la letra "g"')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: When El jugador adivina la letra "g"')
+@given('El jugador empieza el juego')
+def empieza_juego(context):
+    context.driver = webdriver.Chrome()
+    context.driver.get("http://localhost:5000/")
+
+@when('El jugador ingresa la letra "{letra}"')
+def ingresa_letra(context,letra):
+    elemento =  context.driver.find_element(By.NAME,"input")
+    elemento.send_keys(letra)
+    context.driver.implicitly_wait(40) # seconds
+
+    context.driver.find_element(By.NAME,"adivinar").click()
+    
+    
+@then('Pierde una vida')
+def pierde_vida(context):
+    h2 = context.driver.find_element(By.ID,'vidas').text
+    print(h2)
+    vidas = int(''.join(caracter for caracter in h2 if caracter.isdigit()))
+
+    assert vidas < 6
 
 
-@then(u'Se muestra "_ G _ _ _ _"')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then Se muestra "_ G _ _ _ _"')
 
+@then('Se muestra como letra incorrecta "{letra}"')
+def letras_incorrectas(context,letra):
+    
+    texto = context.driver.find_element(By.ID,'incorrectas').text  
+    inicio_lista = texto.find("[")
 
-@given(u'La palabra a adivinar del juego es "python"')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Given La palabra a adivinar del juego es "python"')
+    incorrectas = eval(texto[inicio_lista:])
 
+    assert letra in incorrectas
 
-@when(u'El jugador adivina la letra "u"')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: When El jugador adivina la letra "u"')
+@then('La palabra se actualiza y contiene la "{letra}"')
+def estado_palabra_adivinar(context,letra):
+    texto = context.driver.find_element(By.ID,'palabraAhorcado').text  
+    inicio_lista = texto.find("[")
 
+    palabra_adivinar = eval(texto[inicio_lista:])
 
-@then(u'Pierde una vida')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then Pierde una vida')
+    assert letra in palabra_adivinar
+    
+@when('El jugador ingresa 6 caracteres incorrectos')
+def adivina_6_incorrectas(context):
+    caracteres = ["!","*","+",".","&",":"]
+    context.driver.implicitly_wait(40) # seconds
 
+    for c in caracteres:
+        elemento =  context.driver.find_element(By.NAME,"input")
+        elemento.send_keys(c)
+        context.driver.implicitly_wait(40) # seconds
 
-@then(u'Se muestra como letra incorrecta "u"')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then Se muestra como letra incorrecta "u"')
+        context.driver.find_element(By.NAME,"adivinar").click()
+    
 
+@then('Pierde el juego')
+def pierde(context):
+    assert LOST_URL in context.driver.current_url
 
-@given(u'La palabra a adivinar del juego es "puerta"')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Given La palabra a adivinar del juego es "puerta"')
+@then('Muestra el mensaje de que perdio con la palabra a adivinar')
+def mensaje_pierde(context):
+    mensaje = context.driver.find_element(By.ID,'lost').text
+    palabra = context.driver.find_element(By.ID,'palabra').text
 
+    assert mensaje == LOST_MESSAGE
+    assert  PALABRA_LOST_MESSAGE in palabra
 
-@when(u'El jugador adivina las letras "P", "U", "E", "R", "T", "A"')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: When El jugador adivina las letras "P", "U", "E", "R", "T", "A"')
+@given('El jugador ingresa la letra "{letra}"')
+def ingresa_letra(context,letra):
+    elemento =  context.driver.find_element(By.NAME,"input")
+    elemento.send_keys(letra)
+    context.driver.implicitly_wait(40) # seconds
 
+    context.driver.find_element(By.NAME,"adivinar").click()
+    
+    
+@when('El jugador reinicia el juego')
+def reinicia(context):
+    context.driver.find_element(By.NAME,"reinicia").click()
 
-@then(u'Gana el juego')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then Gana el juego')
-
-
-@then(u'Muestra mensaje ganador con la palabra a adivinar')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then Muestra mensaje ganador con la palabra a adivinar')
-
-
-@when(u'El jugador adivina 6 letras incorrectas')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: When El jugador adivina 6 letras incorrectas')
-
-
-@then(u'Pierde el juego')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then Pierde el juego')
-
-
-@then(u'Muestra el mensaje de que perdio con la palabra a adivinar')
-def step_impl(context):
-    raise NotImplementedError(u'STEP: Then Muestra el mensaje de que perdio con la palabra a adivinar')

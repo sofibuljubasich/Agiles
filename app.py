@@ -25,16 +25,6 @@ def index():
 
 
 
-@app.route('/nuevo_juego')
-def nuevo_juego():
-    juego.iniciar()
-
-    session['palabra']= juego.palabraAdivinar
-    session['palabraAhorcado'] = juego.palabraAhocardo
-    session['vidas'] = juego.vidas
-    session['incorrectas']=juego.letras_incorrectas
-    return render_template('jugar.html',palabra=session['palabra'],palabraAhorcado=session['palabraAhorcado'],vidas=session['vidas'],incorrectas=session['incorrectas'])
-
 
 @app.route('/adivinar', methods=['POST'])
 def adivinar():

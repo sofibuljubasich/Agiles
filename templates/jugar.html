@@ -22,12 +22,12 @@
        
 
         <form action="/adivinar" method="post">
-            <input type="text" name="input" placeholder="Enter a letter" pattern="[A-Za-z]+" class="subfont-input">
-            <button type="submit" class="subfont">Guess</button>
+            <input type="text" name="input" placeholder="Enter a letter" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])+" class="subfont-input">
+            <button type="submit" name="adivinar" class="subfont">Guess</button>
         </form>
 
-        <form action="/play_again" method="post">
-            <button type="submit" class="subfont">Play Again</button>
+        <form action="/play_again" method="post" id="replay">
+            <button type="submit" name ="reinicia" class="subfont">Play Again</button>
         </form>
     </div>
 
