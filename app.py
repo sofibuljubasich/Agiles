@@ -29,11 +29,11 @@ def index():
 @app.route('/adivinar', methods=['POST'])
 def adivinar():
 
-    input = request.form['input']
+    input_user = request.form['input']
 
 
 
-    if juego.arriesgar(input):
+    if juego.arriesgar(input_user):
         if juego.gano():
             return render_template("win.html", palabra=session['palabra'])
         

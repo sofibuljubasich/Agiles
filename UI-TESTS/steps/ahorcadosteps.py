@@ -1,4 +1,4 @@
-from behave import *
+from behave import given,when,then
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -8,7 +8,7 @@ LOST_MESSAGE = "Oh no, Perdiste!"
 PALABRA_LOST_MESSAGE = "No pudiste adivinar la palabra: "
 
 @given('Ingreso a la pagina del juego')
-def abrirPagina(context):
+def abrir_pagina(context):
     context.driver = webdriver.Chrome()
     #context.driver.get("http://localhost:5000/")
 

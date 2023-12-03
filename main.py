@@ -7,39 +7,35 @@ class Ahorcado:
       
         self.vidas = 6
         self.letras_incorrectas = []
-        self.palabraAdivinar = "" 
-        self.palabraAhocardo = []
+        self.palabra_adivinar = "" 
+        self.palabra_ahocardo = []
         
     def iniciar(self):
-        self.palabraAdivinar = self.palabra_random()
-        self.palabraAhocardo = self.inicializar_espacios(self.palabraAdivinar)
+        self.palabra_adivinar = self.palabra_random()
+        self.palabra_ahocardo = self.inicializar_espacios(self.palabra_adivinar)
         self.vidas = 6
         self.letras_incorrectas = []
     
-    #def mostrar_palabra_ahorcado(self,palabra):
-        #resultado = palabra[0].capitalize() + "_".join(letra.capitalize() if letra.isalpha() else letra for letra in palabra[1:])
-
-        #return resultado
     
     def palabra_random(self):
         return random.choice(LP)
 
-    def inicializar_espacios(self,palabraAdivinar):
-        return ["_" for _ in palabraAdivinar]
+    def inicializar_espacios(self,palabra_adivinar):
+        return ["_" for _ in palabra_adivinar]
     
     def get_palabra(self):
-        return self.palabraAdivinar
+        return self.palabra_adivinar
         
     def arriesgar_palabra(self,palabra):
         
-        if (palabra == self.palabraAdivinar):
-            self.palabraAhocardo = [i for a,i in enumerate(self.palabraAdivinar) ]
+        if (palabra == self.palabra_adivinar):
+            self.palabraAhocardo = [i for a,i in enumerate(self.palabra_adivinar) ]
             return True
         else:
             self.descontar_vida()
             return False
     
-   #REVISAR
+
     def arriesgar_letra(self,letra):
         if self.pertenece_palabra(letra):
             self.reemplazar_letra(letra)
@@ -52,33 +48,29 @@ class Ahorcado:
             return False
   
     
-    def reemplazar_letra(self,input):
-        for idx, letra in enumerate(self.palabraAdivinar):
-            if input == letra:
-                self.palabraAhocardo[idx]=input
+    def reemplazar_letra(self,input_user):
+        for idx, letra in enumerate(self.palabra_adivinar):
+            if input_user == letra:
+                self.palabra_ahocardo[idx]=input_user
           
     def arriesgar(self,input_form):
-        input = self.formatear_input(input_form)
-        if self.es_letra(input):
-            return self.arriesgar_letra(input)
+        input_user = self.formatear_input(input_form)
+        if self.es_letra(input_user):
+            return self.arriesgar_letra(input_user)
         else:
-            print(input)
-            return self.arriesgar_palabra(input)
+            return self.arriesgar_palabra(input_user)
     
-    def es_letra(self,input):
-        return (len(input)==1)
+    def es_letra(self,input_user):
+        return (len(input_user)==1)
     
     def pertenece_incorrectas(self,letra):
         return letra in self.letras_incorrectas
     
     
     def pertenece_palabra(self,letra):
-        return letra in self.palabraAdivinar
+        return letra in self.palabra_adivinar
 
-    #Ver    
-    """def devolver_posicion_letra(self,letra):
-        return self.palabraAdivinar.find(letra)"""
-    
+   
     def descontar_vida(self):
         self.vidas-=1
 
@@ -87,12 +79,12 @@ class Ahorcado:
 
 
     def gano(self):
-        estado = ''.join(self.palabraAhocardo)
-        return estado == self.palabraAdivinar
+        estado = ''.join(self.palabra_ahocardo)
+        return estado == self.palabra_adivinar
     
     def perdio(self):
         return (self.vidas <1)
     
-    def formatear_input(self,input):
-        return input.lower()
+    def formatear_input(self,input_user):
+        return input_user.lower()
     
