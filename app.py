@@ -10,8 +10,8 @@ juego = Ahorcado()
 def iniciar_juego():
     juego.iniciar()
 
-    session['palabra']= juego.palabraAdivinar
-    session['palabraAhorcado'] = juego.palabraAhocardo
+    session['palabra']= juego.palabra_adivinar
+    session['palabraAhorcado'] = juego.palabra_ahocardo
     session['vidas'] = juego.vidas
     session['incorrectas']=juego.letras_incorrectas
 
@@ -37,15 +37,15 @@ def adivinar():
         if juego.gano():
             return render_template("win.html", palabra=session['palabra'])
         
-        session['palabraAhorcado'] = juego.palabraAhocardo
+        session['palabraAhorcado'] = juego.palabra_ahocardo
         return redirect(url_for("index"))
 
     if juego.perdio():
         return render_template("lose.html", palabra=session['palabra'])
 
     
-    session['palabra']= juego.palabraAdivinar
-    session['palabraAhorcado'] = juego.palabraAhocardo
+    session['palabra']= juego.palabra_adivinar
+    session['palabraAhorcado'] = juego.palabra_ahocardo
     session['vidas'] = juego.vidas
     session['incorrectas']=juego.letras_incorrectas
 

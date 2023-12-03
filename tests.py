@@ -7,53 +7,47 @@ class TestAhorcado(unittest.TestCase):
 
     def test_arriesgar_palabra_correcta(self):
         juego = Ahorcado() 
-        juego.palabraAdivinar="hola"
+        juego.palabra_adivinar="hola"
         self.assertTrue(juego.arriesgar_palabra("hola"))
     
     def test_arriesgar_palabra_incorrecta(self):
         juego = Ahorcado() 
-        juego.palabraAdivinar="hola"
+        juego.palabra_adivinar="hola"
         self.assertFalse(juego.arriesgar_palabra("chau"))
 
     def test_arriesgar_letra_correcta(self):
         juego = Ahorcado() 
         juego.iniciar()
 
-        juego.palabraAdivinar="hola"
+        juego.palabra_adivinar="hola"
         self.assertTrue(juego.arriesgar_letra("l"))
     
     def test_arriesgar_letra_incorrecta(self):
         juego = Ahorcado() 
-        juego.palabraAdivinar="hola"
+        juego.palabra_adivinar="hola"
         self.assertFalse(juego.arriesgar_letra("k"))
     
 
-    #Me parece que no es necesaario
-    """def test_devolver_posicion_letra_correcta(self):
-        juego = Ahorcado() 
-        juego.palabraAdivinar="hola"
-        self.assertGreaterEqual(juego.devolver_posicion_letra("o"),0)
-    """
+   
     def test_letra_correcta_no_pierde_intento(self):
-        # revisar test el martes 17
         juego = Ahorcado() 
         juego.vidas = 6
-        juego.palabraAdivinar= "hola"
-        juego.palabraAhocardo = ["_","o","_","_"]
+        juego.palabra_adivinar= "hola"
+        juego.palabra_ahocardo = ["_","o","_","_"]
         juego.arriesgar("o")
         self.assertEqual(juego.vidas,6)
     
     def test_letra_incorrecta_pierde_primer_intento(self):
         # revisar test
         juego = Ahorcado() 
-        juego.palabraAdivinar= "hola"
+        juego.palabra_adivinar= "hola"
         juego.vidas=6
         juego.arriesgar("m")
         self.assertEqual(juego.vidas,5)
 
     def test_mostrar_letras_incorrectas(self):
         juego = Ahorcado() 
-        juego.palabraAdivinar= "hola"
+        juego.palabra_adivinar= "hola"
         juego.letras_incorrectas = ["k","m"]
     
         self.assertEqual(juego.mostrar_letras_incorrectas(),["k","m"])
@@ -61,22 +55,22 @@ class TestAhorcado(unittest.TestCase):
     def test_muestra_letras_correctas_en_palabra(self):
         # revisar test
         juego = Ahorcado() 
-        juego.palabraAdivinar= "hola"
-        juego.palabraAhocardo = ["_","_","l","_"]
-        self.assertEqual(juego.palabraAhocardo,["_","_","l","_"])
+        juego.palabra_adivinar= "hola"
+        juego.palabra_ahocardo = ["_","_","l","_"]
+        self.assertEqual(juego.palabra_ahocardo,["_","_","l","_"])
     
     def test_letra_incorrecta_repetida(self):
         juego = Ahorcado()
 
-        juego.palabraAdivinar= "hola"
+        juego.palabra_adivinar= "hola"
         juego.letras_incorrectas = ["x"]
         
         self.assertTrue(juego.pertenece_incorrectas("x"))
 
     def test_letra_correcta_repetida(self):
         juego = Ahorcado()
-        juego.palabraAdivinar= "hola"
-        juego.palabraAhocardo = ["_","_","_","a"]
+        juego.palabra_adivinar= "hola"
+        juego.palabra_ahocardo = ["_","_","_","a"]
        
         self.assertTrue(juego.pertenece_palabra("a"))
 
@@ -96,8 +90,8 @@ class TestAhorcado(unittest.TestCase):
     def test_letra_incorrecta_repetida_no_pierde(self):
         juego = Ahorcado()
         juego.iniciar()
-        juego.palabraAdivinar = "programador"
-        juego.palabraAhocardo = juego.inicializar_espacios("programador")
+        juego.palabra_adivinar = "programador"
+        juego.palabra_ahocardo = juego.inicializar_espacios("programador")
         juego.letras_incorrectas.append("i")
         juego.arriesgar("i")
 
@@ -114,7 +108,7 @@ class TestAhorcado(unittest.TestCase):
     def test_pierde(self):
 
         juego = Ahorcado()
-        juego.palabraAdivinar = "lunes"
+        juego.palabra_adivinar = "lunes"
         juego.vidas = 1
         juego.arriesgar("p")
         
@@ -122,15 +116,15 @@ class TestAhorcado(unittest.TestCase):
     
     def test_gana_x_letra(self):
         juego = Ahorcado()
-        juego.palabraAdivinar = "ganador"
-        juego.palabraAhocardo = ["g","a","n","a","_","o","r"]
+        juego.palabra_adivinar = "ganador"
+        juego.palabra_ahocardo = ["g","a","n","a","_","o","r"]
         juego.arriesgar("d")
         self.assertTrue(juego.gano())
 
     def test_gana_x_palabra(self):
         juego = Ahorcado()
-        juego.palabraAdivinar = "puerta"
-        juego.palabraAhocardo = ["p","_","e","r","t","a"]
+        juego.palabra_adivinar = "puerta"
+        juego.palabra_ahocardo = ["p","_","e","r","t","a"]
         juego.arriesgar("puerta")
         self.assertTrue(juego.gano())
 
