@@ -29,7 +29,7 @@ class Ahorcado:
     def arriesgar_palabra(self,palabra):
         
         if (palabra == self.palabra_adivinar):
-            self.palabraAhocardo = [i for a,i in enumerate(self.palabra_adivinar) ]
+            self.palabra_ahocardo = [i for a,i in enumerate(self.palabra_adivinar) ]
             return True
         else:
             self.descontar_vida()
