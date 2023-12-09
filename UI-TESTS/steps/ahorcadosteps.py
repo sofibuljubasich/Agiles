@@ -61,7 +61,7 @@ def empieza_juego(context):
 def ingresa_letra(context,letra):
     elemento =  context.driver.find_element(By.NAME,"input")
     elemento.send_keys(letra)
-    context.driver.implicitly_wait(40) # seconds
+    context.driver.implicitly_wait(40) 
 
     context.driver.find_element(By.NAME,"adivinar").click()
     
