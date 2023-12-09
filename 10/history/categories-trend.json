@@ -1,0 +1,8 @@
+[ {
+  "buildOrder" : 10,
+  "reportUrl" : "https://sofibuljubasich.github.io/Agiles/10",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "Test defects" : 8
+  }
+} ]

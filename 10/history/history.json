@@ -1,0 +1,170 @@
+{
+  "e0227a2fd4eda1668d05b15e75fd322c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3d88a2acc3315957",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/10/#testresult/3d88a2acc3315957",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55caa3dd55e3 <unknown>\n#1 0x55caa3a980b7 <unknown>\n#2 0x55caa3acee55 <unknown>\n#3 0x55caa3acbb81 <unknown>\n#4 0x55caa3b1647f <unknown>\n#5 0x55caa3b0ccc3 <unknown>\n#6 0x55caa3ad80e4 <unknown>\n#7 0x55caa3ad90ae <unknown>\n#8 0x55caa3d9bce1 <unknown>\n#9 0x55caa3d9fb7e <unknown>\n#10 0x55caa3d894b5 <unknown>\n#11 0x55caa3da07d6 <unknown>\n#12 0x55caa3d6cdbf <unknown>\n#13 0x55caa3dc3748 <unknown>\n#14 0x55caa3dc3917 <unknown>\n#15 0x55caa3dd4773 <unknown>\n#16 0x7f322cc94ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1702088439603,
+        "stop" : 1702088440265,
+        "duration" : 662
+      }
+    } ]
+  },
+  "5b7742e6918dff3fa84e6171254f12cc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9170da9749340209",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/10/#testresult/9170da9749340209",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x56334c5d55e3 <unknown>\n#1 0x56334c2980b7 <unknown>\n#2 0x56334c2cee55 <unknown>\n#3 0x56334c2cbb81 <unknown>\n#4 0x56334c31647f <unknown>\n#5 0x56334c30ccc3 <unknown>\n#6 0x56334c2d80e4 <unknown>\n#7 0x56334c2d90ae <unknown>\n#8 0x56334c59bce1 <unknown>\n#9 0x56334c59fb7e <unknown>\n#10 0x56334c5894b5 <unknown>\n#11 0x56334c5a07d6 <unknown>\n#12 0x56334c56cdbf <unknown>\n#13 0x56334c5c3748 <unknown>\n#14 0x56334c5c3917 <unknown>\n#15 0x56334c5d4773 <unknown>\n#16 0x7f2290294ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1702088438277,
+        "stop" : 1702088438939,
+        "duration" : 662
+      }
+    } ]
+  },
+  "837344b77d364b63dc8caa97fd229b2b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7bb54a5bedb5aada",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/10/#testresult/7bb54a5bedb5aada",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55d18e8995e3 <unknown>\n#1 0x55d18e55c0b7 <unknown>\n#2 0x55d18e592e55 <unknown>\n#3 0x55d18e58fb81 <unknown>\n#4 0x55d18e5da47f <unknown>\n#5 0x55d18e5d0cc3 <unknown>\n#6 0x55d18e59c0e4 <unknown>\n#7 0x55d18e59d0ae <unknown>\n#8 0x55d18e85fce1 <unknown>\n#9 0x55d18e863b7e <unknown>\n#10 0x55d18e84d4b5 <unknown>\n#11 0x55d18e8647d6 <unknown>\n#12 0x55d18e830dbf <unknown>\n#13 0x55d18e887748 <unknown>\n#14 0x55d18e887917 <unknown>\n#15 0x55d18e898773 <unknown>\n#16 0x7f4c85094ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1702088440929,
+        "stop" : 1702088441591,
+        "duration" : 662
+      }
+    } ]
+  },
+  "6aa8267c5fad89a317f110e4b072b707" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ee00cd78bc771f50",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/10/#testresult/ee00cd78bc771f50",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55d8390435e3 <unknown>\n#1 0x55d838d060b7 <unknown>\n#2 0x55d838d3ce55 <unknown>\n#3 0x55d838d39b81 <unknown>\n#4 0x55d838d8447f <unknown>\n#5 0x55d838d7acc3 <unknown>\n#6 0x55d838d460e4 <unknown>\n#7 0x55d838d470ae <unknown>\n#8 0x55d839009ce1 <unknown>\n#9 0x55d83900db7e <unknown>\n#10 0x55d838ff74b5 <unknown>\n#11 0x55d83900e7d6 <unknown>\n#12 0x55d838fdadbf <unknown>\n#13 0x55d839031748 <unknown>\n#14 0x55d839031917 <unknown>\n#15 0x55d839042773 <unknown>\n#16 0x7f21ee894ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1702088438939,
+        "stop" : 1702088439602,
+        "duration" : 663
+      }
+    } ]
+  },
+  "6e906125b833356fca11b51f17de6622" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ec420f1ab3c147cd",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/10/#testresult/ec420f1ab3c147cd",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x564b77d1f5e3 <unknown>\n#1 0x564b779e20b7 <unknown>\n#2 0x564b77a18e55 <unknown>\n#3 0x564b77a15b81 <unknown>\n#4 0x564b77a6047f <unknown>\n#5 0x564b77a56cc3 <unknown>\n#6 0x564b77a220e4 <unknown>\n#7 0x564b77a230ae <unknown>\n#8 0x564b77ce5ce1 <unknown>\n#9 0x564b77ce9b7e <unknown>\n#10 0x564b77cd34b5 <unknown>\n#11 0x564b77cea7d6 <unknown>\n#12 0x564b77cb6dbf <unknown>\n#13 0x564b77d0d748 <unknown>\n#14 0x564b77d0d917 <unknown>\n#15 0x564b77d1e773 <unknown>\n#16 0x7f0fc4c94ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1702088441591,
+        "stop" : 1702088442254,
+        "duration" : 663
+      }
+    } ]
+  },
+  "79703f8fdb9105f473f387b9abb51432" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1d141d9d8a36a6ee",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/10/#testresult/1d141d9d8a36a6ee",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x564714cfb5e3 <unknown>\n#1 0x5647149be0b7 <unknown>\n#2 0x5647149f4e55 <unknown>\n#3 0x5647149f1b81 <unknown>\n#4 0x564714a3c47f <unknown>\n#5 0x564714a32cc3 <unknown>\n#6 0x5647149fe0e4 <unknown>\n#7 0x5647149ff0ae <unknown>\n#8 0x564714cc1ce1 <unknown>\n#9 0x564714cc5b7e <unknown>\n#10 0x564714caf4b5 <unknown>\n#11 0x564714cc67d6 <unknown>\n#12 0x564714c92dbf <unknown>\n#13 0x564714ce9748 <unknown>\n#14 0x564714ce9917 <unknown>\n#15 0x564714cfa773 <unknown>\n#16 0x7f8dcce94ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1702088432603,
+        "stop" : 1702088437609,
+        "duration" : 5006
+      }
+    } ]
+  },
+  "a47f5f4ec5b0e31720db8cdad8cd9997" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "50148b6967ada2d6",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/10/#testresult/50148b6967ada2d6",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x563021ed65e3 <unknown>\n#1 0x563021b990b7 <unknown>\n#2 0x563021bcfe55 <unknown>\n#3 0x563021bccb81 <unknown>\n#4 0x563021c1747f <unknown>\n#5 0x563021c0dcc3 <unknown>\n#6 0x563021bd90e4 <unknown>\n#7 0x563021bda0ae <unknown>\n#8 0x563021e9cce1 <unknown>\n#9 0x563021ea0b7e <unknown>\n#10 0x563021e8a4b5 <unknown>\n#11 0x563021ea17d6 <unknown>\n#12 0x563021e6ddbf <unknown>\n#13 0x563021ec4748 <unknown>\n#14 0x563021ec4917 <unknown>\n#15 0x563021ed5773 <unknown>\n#16 0x7f35b4094ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1702088437610,
+        "stop" : 1702088438276,
+        "duration" : 666
+      }
+    } ]
+  },
+  "c23f7c6a63069ce8b6a84276883333a8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "eeea7983d6736235",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/10/#testresult/eeea7983d6736235",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55bfc8d9b5e3 <unknown>\n#1 0x55bfc8a5e0b7 <unknown>\n#2 0x55bfc8a94e55 <unknown>\n#3 0x55bfc8a91b81 <unknown>\n#4 0x55bfc8adc47f <unknown>\n#5 0x55bfc8ad2cc3 <unknown>\n#6 0x55bfc8a9e0e4 <unknown>\n#7 0x55bfc8a9f0ae <unknown>\n#8 0x55bfc8d61ce1 <unknown>\n#9 0x55bfc8d65b7e <unknown>\n#10 0x55bfc8d4f4b5 <unknown>\n#11 0x55bfc8d667d6 <unknown>\n#12 0x55bfc8d32dbf <unknown>\n#13 0x55bfc8d89748 <unknown>\n#14 0x55bfc8d89917 <unknown>\n#15 0x55bfc8d9a773 <unknown>\n#16 0x7fe222494ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1702088440265,
+        "stop" : 1702088440928,
+        "duration" : 663
+      }
+    } ]
+  }
+}
