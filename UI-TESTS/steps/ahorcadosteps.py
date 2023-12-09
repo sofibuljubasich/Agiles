@@ -2,20 +2,19 @@ from behave import given,when,then
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-
-LOST_URL = "http://localhost:5000/adivinar"
+HOME_URL = "https://ahorcado-agiles.azurewebsites.net/"
+LOST_URL = "https://ahorcado-agiles.azurewebsites.net/adivinar"
 LOST_MESSAGE = "Oh no, Perdiste!"
 PALABRA_LOST_MESSAGE = "No pudiste adivinar la palabra: "
 
 @given('Ingreso a la pagina del juego')
 def abrir_pagina(context):
     context.driver = webdriver.Chrome()
-    #context.driver.get("http://localhost:5000/")
 
 
 @when('Comienza el juego')
 def comienza_juego(context):
-    context.driver.get("http://localhost:5000/")
+    context.driver.get(HOME_URL)
 
 
 @then('la palabra a adivinar debe mostrarse con guiones')
@@ -56,7 +55,7 @@ def incorrectas_vacias(context):
 @given('El jugador empieza el juego')
 def empieza_juego(context):
     context.driver = webdriver.Chrome()
-    context.driver.get("http://localhost:5000/")
+    context.driver.get(HOME_URL)
 
 @when('El jugador ingresa la letra "{letra}"')
 def ingresa_letra(context,letra):
