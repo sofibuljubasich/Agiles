@@ -1,9 +1,4 @@
 [ {
-  "buildOrder" : 11,
-  "reportUrl" : "https://sofibuljubasich.github.io/Agiles/11",
-  "reportName" : "Allure Report with history",
-  "data" : { }
-}, {
   "buildOrder" : 10,
   "reportUrl" : "https://sofibuljubasich.github.io/Agiles/10",
   "reportName" : "Allure Report with history",
