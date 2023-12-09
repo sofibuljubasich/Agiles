@@ -9,7 +9,10 @@ PALABRA_LOST_MESSAGE = "No pudiste adivinar la palabra: "
 
 @given('Ingreso a la pagina del juego')
 def abrir_pagina(context):
-    context.driver = webdriver.Chrome()
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless')
+    context.driver = webdriver.Chrome(options=options)
+
 
 
 @when('Comienza el juego')
@@ -54,7 +57,10 @@ def incorrectas_vacias(context):
 
 @given('El jugador empieza el juego')
 def empieza_juego(context):
-    context.driver = webdriver.Chrome()
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless')
+    context.driver = webdriver.Chrome(options=options)
+
     context.driver.get(HOME_URL)
 
 @when('El jugador ingresa la letra "{letra}"')
