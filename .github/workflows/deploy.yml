@@ -47,6 +47,25 @@ jobs:
         run: pip install -r requirements.txt
 
       # Optional: Add a step to run tests here (PyTest, Django test suites, etc.)
+      - name: Tests and coverage
+        run: |
+          coverage run -m unittest tests.py
+          coverage xml -i -o coverage-xml
+      - name: Test Report
+        run: coverage report
+
+
+      - name: Download install ChromeDriver and set permissions
+        run: |
+          wget https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.159/linux64/chromedriver-linux64.zip
+          unzip chromedriver-linux64.zip
+          chmod +x chromedriver-linux64
+      
+      - name: Run Aceptance Test
+        if: always()
+        run: behave -f allure_behave.formatter:AllureFormatter -o reports -vv UI-TESTS/features 
+        continue-on-error: true
+  
 
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v3
