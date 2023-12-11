@@ -65,12 +65,13 @@ jobs:
             !venv/
 
   sonarqube:
+    name: SonarQube Scanner
     runs-on: ubuntu-latest
+    permissions: read-all
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
       with:
         fetch-depth: 0
-    - name: SonarQube Scan
       uses: sonarsource/sonarqube-scan-action@master
       env:
         SONAR_TOKEN: ${{secrets.SONAR_TOKEN}}
