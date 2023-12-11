@@ -1,0 +1,145 @@
+{
+  "uid" : "4a19c095be5b0d58",
+  "name" : "Reinicia el juego -- @1.1 ",
+  "fullName" : "Hangman Game: Reinicia el juego",
+  "historyId" : "837344b77d364b63dc8caa97fd229b2b",
+  "time" : {
+    "start" : 1701789497750,
+    "stop" : 1701789505542,
+    "duration" : 7792
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given El jugador empieza el juego",
+      "time" : {
+        "start" : 1701789497759,
+        "stop" : 1701789501474,
+        "duration" : 3715
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And El jugador ingresa la letra \"a\"",
+      "time" : {
+        "start" : 1701789501474,
+        "stop" : 1701789502413,
+        "duration" : 939
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When El jugador reinicia el juego",
+      "time" : {
+        "start" : 1701789502413,
+        "stop" : 1701789503086,
+        "duration" : 673
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then la palabra a adivinar debe mostrarse con guiones",
+      "time" : {
+        "start" : 1701789503086,
+        "stop" : 1701789503209,
+        "duration" : 123
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And el numero de vidas debe ser 6",
+      "time" : {
+        "start" : 1701789503209,
+        "stop" : 1701789503275,
+        "duration" : 66
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And las letras incorrectas deben estar vacias",
+      "time" : {
+        "start" : 1701789503275,
+        "stop" : 1701789503364,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Hangman Game"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "letra",
+    "value" : "a"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4a19c095be5b0d58.json",
+  "parameterValues" : [ "a" ]
+}

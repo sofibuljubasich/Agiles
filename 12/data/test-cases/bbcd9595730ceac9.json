@@ -1,0 +1,115 @@
+{
+  "uid" : "bbcd9595730ceac9",
+  "name" : "Ingresar una letra incorrecta -- @1.1 ",
+  "fullName" : "Hangman Game: Ingresar una letra incorrecta",
+  "historyId" : "6aa8267c5fad89a317f110e4b072b707",
+  "time" : {
+    "start" : 1701789470635,
+    "stop" : 1701789478379,
+    "duration" : 7744
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given El jugador empieza el juego",
+      "time" : {
+        "start" : 1701789470635,
+        "stop" : 1701789474033,
+        "duration" : 3398
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When El jugador ingresa la letra \"ñ\"",
+      "time" : {
+        "start" : 1701789474033,
+        "stop" : 1701789474983,
+        "duration" : 950
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then Pierde una vida",
+      "time" : {
+        "start" : 1701789474983,
+        "stop" : 1701789475095,
+        "duration" : 112
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And Se muestra como letra incorrecta \"ñ\"",
+      "time" : {
+        "start" : 1701789475095,
+        "stop" : 1701789475187,
+        "duration" : 92
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Hangman Game"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "letra",
+    "value" : "ñ"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bbcd9595730ceac9.json",
+  "parameterValues" : [ "ñ" ]
+}
