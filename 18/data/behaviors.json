@@ -1,0 +1,113 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Hangman Game",
+    "children" : [ {
+      "name" : "Empezar nuevo juego",
+      "uid" : "d75a83fea8b6985a",
+      "parentUid" : "568eafdc27d8789c7886d2655eecb86d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261913410,
+        "stop" : 1702261920204,
+        "duration" : 6794
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Adivinar una letra correcta -- @1.1 ",
+      "uid" : "4b7242500ee96e4c",
+      "parentUid" : "568eafdc27d8789c7886d2655eecb86d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261920205,
+        "stop" : 1702261921743,
+        "duration" : 1538
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "a" ]
+    }, {
+      "name" : "Adivinar una letra correcta -- @1.2 ",
+      "uid" : "e2db92eb3996fa0d",
+      "parentUid" : "568eafdc27d8789c7886d2655eecb86d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261921743,
+        "stop" : 1702261923676,
+        "duration" : 1933
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "e" ]
+    }, {
+      "name" : "Ingresar una letra incorrecta -- @1.1 ",
+      "uid" : "ae39d4c1e1d76d05",
+      "parentUid" : "568eafdc27d8789c7886d2655eecb86d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261923677,
+        "stop" : 1702261925160,
+        "duration" : 1483
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "ñ" ]
+    }, {
+      "name" : "Ingresar una letra incorrecta -- @1.2 ",
+      "uid" : "edce2fb1620a8545",
+      "parentUid" : "568eafdc27d8789c7886d2655eecb86d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261925160,
+        "stop" : 1702261926581,
+        "duration" : 1421
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "x" ]
+    }, {
+      "name" : "Pierde el juego",
+      "uid" : "f61d6362d79a2412",
+      "parentUid" : "568eafdc27d8789c7886d2655eecb86d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261926582,
+        "stop" : 1702261929877,
+        "duration" : 3295
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Reinicia el juego -- @1.1 ",
+      "uid" : "7c9a91d1fa27d88d",
+      "parentUid" : "568eafdc27d8789c7886d2655eecb86d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261929877,
+        "stop" : 1702261933102,
+        "duration" : 3225
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "a" ]
+    }, {
+      "name" : "Reinicia el juego -- @1.2 ",
+      "uid" : "66934ffba89bd1a3",
+      "parentUid" : "568eafdc27d8789c7886d2655eecb86d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261933103,
+        "stop" : 1702261934850,
+        "duration" : 1747
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "x" ]
+    } ],
+    "uid" : "568eafdc27d8789c7886d2655eecb86d"
+  } ],
+  "name" : "behaviors"
+}
