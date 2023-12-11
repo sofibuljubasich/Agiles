@@ -4,11 +4,20 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "edce2fb1620a8545",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/18/#testresult/edce2fb1620a8545",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261925160,
+        "stop" : 1702261926581,
+        "duration" : 1421
+      }
+    }, {
       "uid" : "1e3dad23dcdc337a",
       "reportUrl" : "https://sofibuljubasich.github.io/Agiles/17/#testresult/1e3dad23dcdc337a",
       "status" : "passed",
@@ -61,11 +70,20 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "e2db92eb3996fa0d",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/18/#testresult/e2db92eb3996fa0d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261921743,
+        "stop" : 1702261923676,
+        "duration" : 1933
+      }
+    }, {
       "uid" : "6e01a0fa1f86441",
       "reportUrl" : "https://sofibuljubasich.github.io/Agiles/17/#testresult/6e01a0fa1f86441",
       "status" : "passed",
@@ -118,11 +136,20 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "7c9a91d1fa27d88d",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/18/#testresult/7c9a91d1fa27d88d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261929877,
+        "stop" : 1702261933102,
+        "duration" : 3225
+      }
+    }, {
       "uid" : "46c2dc5322783230",
       "reportUrl" : "https://sofibuljubasich.github.io/Agiles/17/#testresult/46c2dc5322783230",
       "status" : "passed",
@@ -175,11 +202,20 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "ae39d4c1e1d76d05",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/18/#testresult/ae39d4c1e1d76d05",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261923677,
+        "stop" : 1702261925160,
+        "duration" : 1483
+      }
+    }, {
       "uid" : "bc146e61d3008e6",
       "reportUrl" : "https://sofibuljubasich.github.io/Agiles/17/#testresult/bc146e61d3008e6",
       "status" : "passed",
@@ -232,11 +268,20 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "66934ffba89bd1a3",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/18/#testresult/66934ffba89bd1a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261933103,
+        "stop" : 1702261934850,
+        "duration" : 1747
+      }
+    }, {
       "uid" : "e5da41392cd280b6",
       "reportUrl" : "https://sofibuljubasich.github.io/Agiles/17/#testresult/e5da41392cd280b6",
       "status" : "passed",
@@ -289,11 +334,20 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "d75a83fea8b6985a",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/18/#testresult/d75a83fea8b6985a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261913410,
+        "stop" : 1702261920204,
+        "duration" : 6794
+      }
+    }, {
       "uid" : "d0583093d0074568",
       "reportUrl" : "https://sofibuljubasich.github.io/Agiles/17/#testresult/d0583093d0074568",
       "status" : "passed",
@@ -346,11 +400,20 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "4b7242500ee96e4c",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/18/#testresult/4b7242500ee96e4c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261920205,
+        "stop" : 1702261921743,
+        "duration" : 1538
+      }
+    }, {
       "uid" : "77b60ee1a4ab7d11",
       "reportUrl" : "https://sofibuljubasich.github.io/Agiles/17/#testresult/77b60ee1a4ab7d11",
       "status" : "passed",
@@ -403,11 +466,20 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "f61d6362d79a2412",
+      "reportUrl" : "https://sofibuljubasich.github.io/Agiles/18/#testresult/f61d6362d79a2412",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261926582,
+        "stop" : 1702261929877,
+        "duration" : 3295
+      }
+    }, {
       "uid" : "22872af11b1119ec",
       "reportUrl" : "https://sofibuljubasich.github.io/Agiles/17/#testresult/22872af11b1119ec",
       "status" : "passed",
