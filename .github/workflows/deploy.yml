@@ -69,10 +69,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }} 
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        with:
-          args: >
-            -Dsonar.exclusions=app.py,**/UI-TESTS/*
-            -Dsonar.python.coverage.reportPaths=coverage.xml
+
             
   deploy:
     runs-on: ubuntu-latest
