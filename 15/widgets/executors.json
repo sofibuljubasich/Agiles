@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://sofibuljubasich.github.io/Agiles",
+  "buildOrder" : 15,
+  "buildName" : "GitHub Actions Run #7161945862",
+  "buildUrl" : "https://github.com/sofibuljubasich/Agiles/actions/runs/7161945862",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://sofibuljubasich.github.io/Agiles/15"
+} ]
