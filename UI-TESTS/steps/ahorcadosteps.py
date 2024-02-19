@@ -2,8 +2,8 @@ from behave import given,when,then
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-HOME_URL = "https://ahorcado-agiles.azurewebsites.net/"
-LOST_URL = "https://ahorcado-agiles.azurewebsites.net/adivinar"
+HOME_URL = "https://ahorcadoagiles.azurewebsites.net/"
+LOST_URL = "https://ahorcadoagiles.azurewebsites.net/adivinar"
 LOST_MESSAGE = "Oh no, Perdiste!"
 PALABRA_LOST_MESSAGE = "No pudiste adivinar la palabra: "
 
