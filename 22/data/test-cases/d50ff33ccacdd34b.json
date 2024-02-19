@@ -1,0 +1,276 @@
+{
+  "uid" : "d50ff33ccacdd34b",
+  "name" : "Ingresar una letra incorrecta -- @1.1 ",
+  "fullName" : "Hangman Game: Ingresar una letra incorrecta",
+  "historyId" : "6aa8267c5fad89a317f110e4b072b707",
+  "time" : {
+    "start" : 1708385812223,
+    "stop" : 1708385813159,
+    "duration" : 936
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given El jugador empieza el juego",
+      "time" : {
+        "start" : 1708385812224,
+        "stop" : 1708385812964,
+        "duration" : 740
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When El jugador ingresa la letra \"ñ\"",
+      "time" : {
+        "start" : 1708385812964,
+        "stop" : 1708385813074,
+        "duration" : 110
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then Pierde una vida",
+      "time" : {
+        "start" : 1708385813074,
+        "stop" : 1708385813093,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And Se muestra como letra incorrecta \"ñ\"",
+      "time" : {
+        "start" : 1708385813093,
+        "stop" : 1708385813106,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Hangman Game"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "letra",
+    "value" : "ñ"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5dc43e996357f263",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[name=\"input\"]\"}\n  (Session info: chrome-headless-shell=120.0.6099.71); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n#0 0x55dfaf8dcd33 <unknown>\n#1 0x55dfaf599f87 <unknown>\n#2 0x55dfaf5e9c0e <unknown>\n#3 0x55dfaf5e9d11 <unknown>\n#4 0x55dfaf635004 <unknown>\n#5 0x55dfaf61336d <unknown>\n#6 0x55dfaf632297 <unknown>\n#7 0x55dfaf6130e3 <unknown>\n#8 0x55dfaf5db044 <unknown>\n#9 0x55dfaf5dc44e <unknown>\n#10 0x55dfaf8a1861 <unknown>\n#11 0x55dfaf8a5785 <unknown>\n#12 0x55dfaf88f285 <unknown>\n#13 0x55dfaf8a641f <unknown>\n#14 0x55dfaf87320f <unknown>\n#15 0x55dfaf8ca028 <unknown>\n#16 0x55dfaf8ca1f7 <unknown>\n#17 0x55dfaf8dbed4 <unknown>\n#18 0x7f240f694ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1702861472875,
+        "stop" : 1702861473612,
+        "duration" : 737
+      }
+    }, {
+      "uid" : "ae5dcecb6ee22591",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702262996453,
+        "stop" : 1702262997384,
+        "duration" : 931
+      }
+    }, {
+      "uid" : "26ac1dfe2f607d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261923677,
+        "stop" : 1702261925160,
+        "duration" : 1483
+      }
+    }, {
+      "uid" : "ebbf41da644fe58b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702260735783,
+        "stop" : 1702260736729,
+        "duration" : 946
+      }
+    }, {
+      "uid" : "f86221f9dfbde1ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702260250767,
+        "stop" : 1702260251736,
+        "duration" : 969
+      }
+    }, {
+      "uid" : "a8beb952ae077c7c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702257783221,
+        "stop" : 1702257785062,
+        "duration" : 1841
+      }
+    }, {
+      "uid" : "3ebbfbe51cf8e26c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702093010265,
+        "stop" : 1702093011636,
+        "duration" : 1371
+      }
+    }, {
+      "uid" : "ba3d543e88e690ab",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55d8390435e3 <unknown>\n#1 0x55d838d060b7 <unknown>\n#2 0x55d838d3ce55 <unknown>\n#3 0x55d838d39b81 <unknown>\n#4 0x55d838d8447f <unknown>\n#5 0x55d838d7acc3 <unknown>\n#6 0x55d838d460e4 <unknown>\n#7 0x55d838d470ae <unknown>\n#8 0x55d839009ce1 <unknown>\n#9 0x55d83900db7e <unknown>\n#10 0x55d838ff74b5 <unknown>\n#11 0x55d83900e7d6 <unknown>\n#12 0x55d838fdadbf <unknown>\n#13 0x55d839031748 <unknown>\n#14 0x55d839031917 <unknown>\n#15 0x55d839042773 <unknown>\n#16 0x7f21ee894ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1702088438939,
+        "stop" : 1702088439602,
+        "duration" : 663
+      }
+    }, {
+      "uid" : "d62ce225133bb7c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701789470635,
+        "stop" : 1701789478379,
+        "duration" : 7744
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "4f35600edb95bbab",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/20/#testresult/4f35600edb95bbab",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[name=\"input\"]\"}\n  (Session info: chrome-headless-shell=120.0.6099.71); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n#0 0x55dfaf8dcd33 <unknown>\n#1 0x55dfaf599f87 <unknown>\n#2 0x55dfaf5e9c0e <unknown>\n#3 0x55dfaf5e9d11 <unknown>\n#4 0x55dfaf635004 <unknown>\n#5 0x55dfaf61336d <unknown>\n#6 0x55dfaf632297 <unknown>\n#7 0x55dfaf6130e3 <unknown>\n#8 0x55dfaf5db044 <unknown>\n#9 0x55dfaf5dc44e <unknown>\n#10 0x55dfaf8a1861 <unknown>\n#11 0x55dfaf8a5785 <unknown>\n#12 0x55dfaf88f285 <unknown>\n#13 0x55dfaf8a641f <unknown>\n#14 0x55dfaf87320f <unknown>\n#15 0x55dfaf8ca028 <unknown>\n#16 0x55dfaf8ca1f7 <unknown>\n#17 0x55dfaf8dbed4 <unknown>\n#18 0x7f240f694ac3 <unknown>\n\n",
+        "time" : {
+          "start" : 1702861472875,
+          "stop" : 1702861473612,
+          "duration" : 737
+        }
+      }, {
+        "uid" : "3b45275c634e48f1",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/19/#testresult/3b45275c634e48f1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702262996453,
+          "stop" : 1702262997384,
+          "duration" : 931
+        }
+      }, {
+        "uid" : "ae39d4c1e1d76d05",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/18/#testresult/ae39d4c1e1d76d05",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702261923677,
+          "stop" : 1702261925160,
+          "duration" : 1483
+        }
+      }, {
+        "uid" : "bc146e61d3008e6",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/17/#testresult/bc146e61d3008e6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702260735783,
+          "stop" : 1702260736729,
+          "duration" : 946
+        }
+      }, {
+        "uid" : "2cf13f47e27c3a0f",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/15/#testresult/2cf13f47e27c3a0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702260250767,
+          "stop" : 1702260251736,
+          "duration" : 969
+        }
+      }, {
+        "uid" : "f2e829bf2743ca25",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/12/#testresult/f2e829bf2743ca25",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702257783221,
+          "stop" : 1702257785062,
+          "duration" : 1841
+        }
+      }, {
+        "uid" : "eaecf75f2fc688db",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/11/#testresult/eaecf75f2fc688db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702093010265,
+          "stop" : 1702093011636,
+          "duration" : 1371
+        }
+      }, {
+        "uid" : "ee00cd78bc771f50",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/10/#testresult/ee00cd78bc771f50",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55d8390435e3 <unknown>\n#1 0x55d838d060b7 <unknown>\n#2 0x55d838d3ce55 <unknown>\n#3 0x55d838d39b81 <unknown>\n#4 0x55d838d8447f <unknown>\n#5 0x55d838d7acc3 <unknown>\n#6 0x55d838d460e4 <unknown>\n#7 0x55d838d470ae <unknown>\n#8 0x55d839009ce1 <unknown>\n#9 0x55d83900db7e <unknown>\n#10 0x55d838ff74b5 <unknown>\n#11 0x55d83900e7d6 <unknown>\n#12 0x55d838fdadbf <unknown>\n#13 0x55d839031748 <unknown>\n#14 0x55d839031917 <unknown>\n#15 0x55d839042773 <unknown>\n#16 0x7f21ee894ac3 <unknown>\n\n",
+        "time" : {
+          "start" : 1702088438939,
+          "stop" : 1702088439602,
+          "duration" : 663
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d50ff33ccacdd34b.json",
+  "parameterValues" : [ "ñ" ]
+}
