@@ -1,0 +1,308 @@
+{
+  "uid" : "d930c1012109d4b",
+  "name" : "Adivinar una letra correcta -- @1.2 ",
+  "fullName" : "Hangman Game: Adivinar una letra correcta",
+  "historyId" : "5b7742e6918dff3fa84e6171254f12cc",
+  "time" : {
+    "start" : 1708467305308,
+    "stop" : 1708467306324,
+    "duration" : 1016
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given El jugador empieza el juego",
+      "time" : {
+        "start" : 1708467305308,
+        "stop" : 1708467306060,
+        "duration" : 752
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When El jugador ingresa la letra \"e\"",
+      "time" : {
+        "start" : 1708467306060,
+        "stop" : 1708467306223,
+        "duration" : 163
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then La palabra se actualiza y contiene la \"e\"",
+      "time" : {
+        "start" : 1708467306223,
+        "stop" : 1708467306242,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And el numero de vidas debe ser 6",
+      "time" : {
+        "start" : 1708467306242,
+        "stop" : 1708467306258,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And las letras incorrectas deben estar vacias",
+      "time" : {
+        "start" : 1708467306258,
+        "stop" : 1708467306271,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Hangman Game"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "letra",
+    "value" : "e"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "40d1cae961ce174e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1708385811286,
+        "stop" : 1708385812223,
+        "duration" : 937
+      }
+    }, {
+      "uid" : "e0b711baf7c27d6d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[name=\"input\"]\"}\n  (Session info: chrome-headless-shell=120.0.6099.71); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n#0 0x561e7f63dd33 <unknown>\n#1 0x561e7f2faf87 <unknown>\n#2 0x561e7f34ac0e <unknown>\n#3 0x561e7f34ad11 <unknown>\n#4 0x561e7f396004 <unknown>\n#5 0x561e7f37436d <unknown>\n#6 0x561e7f393297 <unknown>\n#7 0x561e7f3740e3 <unknown>\n#8 0x561e7f33c044 <unknown>\n#9 0x561e7f33d44e <unknown>\n#10 0x561e7f602861 <unknown>\n#11 0x561e7f606785 <unknown>\n#12 0x561e7f5f0285 <unknown>\n#13 0x561e7f60741f <unknown>\n#14 0x561e7f5d420f <unknown>\n#15 0x561e7f62b028 <unknown>\n#16 0x561e7f62b1f7 <unknown>\n#17 0x561e7f63ced4 <unknown>\n#18 0x7f00f1094ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1702861472133,
+        "stop" : 1702861472874,
+        "duration" : 741
+      }
+    }, {
+      "uid" : "83cb5fb0ae4e883f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702262995518,
+        "stop" : 1702262996452,
+        "duration" : 934
+      }
+    }, {
+      "uid" : "e731a1e55a749ee4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702261921743,
+        "stop" : 1702261923676,
+        "duration" : 1933
+      }
+    }, {
+      "uid" : "5d926c8083f72070",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702260734824,
+        "stop" : 1702260735782,
+        "duration" : 958
+      }
+    }, {
+      "uid" : "c2395b33dc4f0613",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702260249791,
+        "stop" : 1702260250767,
+        "duration" : 976
+      }
+    }, {
+      "uid" : "a86065685c851686",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702257781211,
+        "stop" : 1702257783221,
+        "duration" : 2010
+      }
+    }, {
+      "uid" : "b40ad359111c65dd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1702093008661,
+        "stop" : 1702093010265,
+        "duration" : 1604
+      }
+    }, {
+      "uid" : "21f4514efe1efcb7",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x56334c5d55e3 <unknown>\n#1 0x56334c2980b7 <unknown>\n#2 0x56334c2cee55 <unknown>\n#3 0x56334c2cbb81 <unknown>\n#4 0x56334c31647f <unknown>\n#5 0x56334c30ccc3 <unknown>\n#6 0x56334c2d80e4 <unknown>\n#7 0x56334c2d90ae <unknown>\n#8 0x56334c59bce1 <unknown>\n#9 0x56334c59fb7e <unknown>\n#10 0x56334c5894b5 <unknown>\n#11 0x56334c5a07d6 <unknown>\n#12 0x56334c56cdbf <unknown>\n#13 0x56334c5c3748 <unknown>\n#14 0x56334c5c3917 <unknown>\n#15 0x56334c5d4773 <unknown>\n#16 0x7f2290294ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1702088438277,
+        "stop" : 1702088438939,
+        "duration" : 662
+      }
+    }, {
+      "uid" : "15877e431be50ef1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701789463536,
+        "stop" : 1701789470635,
+        "duration" : 7099
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "a85feace2233a546",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/22/#testresult/a85feace2233a546",
+        "status" : "passed",
+        "time" : {
+          "start" : 1708385811286,
+          "stop" : 1708385812223,
+          "duration" : 937
+        }
+      }, {
+        "uid" : "2ac738023cb5d60",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/20/#testresult/2ac738023cb5d60",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[name=\"input\"]\"}\n  (Session info: chrome-headless-shell=120.0.6099.71); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n#0 0x561e7f63dd33 <unknown>\n#1 0x561e7f2faf87 <unknown>\n#2 0x561e7f34ac0e <unknown>\n#3 0x561e7f34ad11 <unknown>\n#4 0x561e7f396004 <unknown>\n#5 0x561e7f37436d <unknown>\n#6 0x561e7f393297 <unknown>\n#7 0x561e7f3740e3 <unknown>\n#8 0x561e7f33c044 <unknown>\n#9 0x561e7f33d44e <unknown>\n#10 0x561e7f602861 <unknown>\n#11 0x561e7f606785 <unknown>\n#12 0x561e7f5f0285 <unknown>\n#13 0x561e7f60741f <unknown>\n#14 0x561e7f5d420f <unknown>\n#15 0x561e7f62b028 <unknown>\n#16 0x561e7f62b1f7 <unknown>\n#17 0x561e7f63ced4 <unknown>\n#18 0x7f00f1094ac3 <unknown>\n\n",
+        "time" : {
+          "start" : 1702861472133,
+          "stop" : 1702861472874,
+          "duration" : 741
+        }
+      }, {
+        "uid" : "21ce20ca2a3ef541",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/19/#testresult/21ce20ca2a3ef541",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702262995518,
+          "stop" : 1702262996452,
+          "duration" : 934
+        }
+      }, {
+        "uid" : "e2db92eb3996fa0d",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/18/#testresult/e2db92eb3996fa0d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702261921743,
+          "stop" : 1702261923676,
+          "duration" : 1933
+        }
+      }, {
+        "uid" : "6e01a0fa1f86441",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/17/#testresult/6e01a0fa1f86441",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702260734824,
+          "stop" : 1702260735782,
+          "duration" : 958
+        }
+      }, {
+        "uid" : "ee6cd6fce9e8485",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/15/#testresult/ee6cd6fce9e8485",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702260249791,
+          "stop" : 1702260250767,
+          "duration" : 976
+        }
+      }, {
+        "uid" : "e1afa158d0c2b92a",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/12/#testresult/e1afa158d0c2b92a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702257781211,
+          "stop" : 1702257783221,
+          "duration" : 2010
+        }
+      }, {
+        "uid" : "53af01d5d3e69b1d",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/11/#testresult/53af01d5d3e69b1d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1702093008661,
+          "stop" : 1702093010265,
+          "duration" : 1604
+        }
+      }, {
+        "uid" : "9170da9749340209",
+        "reportUrl" : "https://sofibuljubasich.github.io/Agiles/10/#testresult/9170da9749340209",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x56334c5d55e3 <unknown>\n#1 0x56334c2980b7 <unknown>\n#2 0x56334c2cee55 <unknown>\n#3 0x56334c2cbb81 <unknown>\n#4 0x56334c31647f <unknown>\n#5 0x56334c30ccc3 <unknown>\n#6 0x56334c2d80e4 <unknown>\n#7 0x56334c2d90ae <unknown>\n#8 0x56334c59bce1 <unknown>\n#9 0x56334c59fb7e <unknown>\n#10 0x56334c5894b5 <unknown>\n#11 0x56334c5a07d6 <unknown>\n#12 0x56334c56cdbf <unknown>\n#13 0x56334c5c3748 <unknown>\n#14 0x56334c5c3917 <unknown>\n#15 0x56334c5d4773 <unknown>\n#16 0x7f2290294ac3 <unknown>\n\n",
+        "time" : {
+          "start" : 1702088438277,
+          "stop" : 1702088438939,
+          "duration" : 662
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d930c1012109d4b.json",
+  "parameterValues" : [ "e" ]
+}
