@@ -1,0 +1,133 @@
+{
+  "uid" : "7c616e2794bcb637",
+  "name" : "Empezar nuevo juego",
+  "fullName" : "Hangman Game: Empezar nuevo juego",
+  "historyId" : "79703f8fdb9105f473f387b9abb51432",
+  "time" : {
+    "start" : 1702861461196,
+    "stop" : 1702861471373,
+    "duration" : 10177
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"palabraAhorcado\"]\"}\n  (Session info: chrome-headless-shell=120.0.6099.71); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n#0 0x5627102a6d33 <unknown>\n#1 0x56270ff63f87 <unknown>\n#2 0x56270ffb3c0e <unknown>\n#3 0x56270ffb3d11 <unknown>\n#4 0x56270ffff004 <unknown>\n#5 0x56270ffdd36d <unknown>\n#6 0x56270fffc297 <unknown>\n#7 0x56270ffdd0e3 <unknown>\n#8 0x56270ffa5044 <unknown>\n#9 0x56270ffa644e <unknown>\n#10 0x56271026b861 <unknown>\n#11 0x56271026f785 <unknown>\n#12 0x562710259285 <unknown>\n#13 0x56271027041f <unknown>\n#14 0x56271023d20f <unknown>\n#15 0x562710294028 <unknown>\n#16 0x5627102941f7 <unknown>\n#17 0x5627102a5ed4 <unknown>\n#18 0x7f0841094ac3 <unknown>\n\n",
+  "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"UI-TESTS/steps/ahorcadosteps.py\", line 25, in palabra_con_guiones\n    texto = context.driver.find_element(By.ID,'palabraAhorcado').text\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 741, in find_element\n    return self.execute(Command.FIND_ELEMENT, {\"using\": by, \"value\": value})[\"value\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 347, in execute\n    self.error_handler.check_response(response)\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"palabraAhorcado\"]\"}\n  (Session info: chrome-headless-shell=120.0.6099.71); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n#0 0x5627102a6d33 <unknown>\n#1 0x56270ff63f87 <unknown>\n#2 0x56270ffb3c0e <unknown>\n#3 0x56270ffb3d11 <unknown>\n#4 0x56270ffff004 <unknown>\n#5 0x56270ffdd36d <unknown>\n#6 0x56270fffc297 <unknown>\n#7 0x56270ffdd0e3 <unknown>\n#8 0x56270ffa5044 <unknown>\n#9 0x56270ffa644e <unknown>\n#10 0x56271026b861 <unknown>\n#11 0x56271026f785 <unknown>\n#12 0x562710259285 <unknown>\n#13 0x56271027041f <unknown>\n#14 0x56271023d20f <unknown>\n#15 0x562710294028 <unknown>\n#16 0x5627102941f7 <unknown>\n#17 0x5627102a5ed4 <unknown>\n#18 0x7f0841094ac3 <unknown>\n\n",
+    "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"UI-TESTS/steps/ahorcadosteps.py\", line 25, in palabra_con_guiones\n    texto = context.driver.find_element(By.ID,'palabraAhorcado').text\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 741, in find_element\n    return self.execute(Command.FIND_ELEMENT, {\"using\": by, \"value\": value})[\"value\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 347, in execute\n    self.error_handler.check_response(response)\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+    "steps" : [ {
+      "name" : "Given Ingreso a la pagina del juego",
+      "time" : {
+        "start" : 1702861461196,
+        "stop" : 1702861470733,
+        "duration" : 9537
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When Comienza el juego",
+      "time" : {
+        "start" : 1702861470734,
+        "stop" : 1702861471246,
+        "duration" : 512
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then la palabra a adivinar debe mostrarse con guiones",
+      "time" : {
+        "start" : 1702861471246,
+        "stop" : 1702861471372,
+        "duration" : 126
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"palabraAhorcado\"]\"}\n  (Session info: chrome-headless-shell=120.0.6099.71); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n#0 0x5627102a6d33 <unknown>\n#1 0x56270ff63f87 <unknown>\n#2 0x56270ffb3c0e <unknown>\n#3 0x56270ffb3d11 <unknown>\n#4 0x56270ffff004 <unknown>\n#5 0x56270ffdd36d <unknown>\n#6 0x56270fffc297 <unknown>\n#7 0x56270ffdd0e3 <unknown>\n#8 0x56270ffa5044 <unknown>\n#9 0x56270ffa644e <unknown>\n#10 0x56271026b861 <unknown>\n#11 0x56271026f785 <unknown>\n#12 0x562710259285 <unknown>\n#13 0x56271027041f <unknown>\n#14 0x56271023d20f <unknown>\n#15 0x562710294028 <unknown>\n#16 0x5627102941f7 <unknown>\n#17 0x5627102a5ed4 <unknown>\n#18 0x7f0841094ac3 <unknown>\n\n",
+      "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"UI-TESTS/steps/ahorcadosteps.py\", line 25, in palabra_con_guiones\n    texto = context.driver.find_element(By.ID,'palabraAhorcado').text\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 741, in find_element\n    return self.execute(Command.FIND_ELEMENT, {\"using\": by, \"value\": value})[\"value\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 347, in execute\n    self.error_handler.check_response(response)\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "And el numero de vidas debe ser 6",
+      "time" : {
+        "start" : 1702861471373,
+        "stop" : 1702861471373,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And las letras incorrectas deben estar vacias",
+      "time" : {
+        "start" : 1702861471373,
+        "stop" : 1702861471373,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Hangman Game"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7c616e2794bcb637.json",
+  "parameterValues" : [ ]
+}
