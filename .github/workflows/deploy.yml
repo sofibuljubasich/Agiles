@@ -51,11 +51,11 @@ jobs:
       # Optional: Add a step to run tests here (PyTest, Django test suites, etc.)
       - name: Tests and coverage
         run: |
-          coverage run -m unittest main.py
-          coverage run -m unittest tests.py
+          python -m coverage run tests.py
+          
       - name: Test Report
         run: |
-          coverage report
+          python -m coverage report
           coverage xml
             
       - name: Upload artifact for deployment jobs
