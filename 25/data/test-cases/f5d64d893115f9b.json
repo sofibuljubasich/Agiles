@@ -1,0 +1,151 @@
+{
+  "uid" : "f5d64d893115f9b",
+  "name" : "Reinicia el juego -- @1.2 ",
+  "fullName" : "Hangman Game: Reinicia el juego",
+  "historyId" : "6e906125b833356fca11b51f17de6622",
+  "time" : {
+    "start" : 1702861515871,
+    "stop" : 1702861516622,
+    "duration" : 751
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[name=\"input\"]\"}\n  (Session info: chrome-headless-shell=120.0.6099.71); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n#0 0x55abe13c2d33 <unknown>\n#1 0x55abe107ff87 <unknown>\n#2 0x55abe10cfc0e <unknown>\n#3 0x55abe10cfd11 <unknown>\n#4 0x55abe111b004 <unknown>\n#5 0x55abe10f936d <unknown>\n#6 0x55abe1118297 <unknown>\n#7 0x55abe10f90e3 <unknown>\n#8 0x55abe10c1044 <unknown>\n#9 0x55abe10c244e <unknown>\n#10 0x55abe1387861 <unknown>\n#11 0x55abe138b785 <unknown>\n#12 0x55abe1375285 <unknown>\n#13 0x55abe138c41f <unknown>\n#14 0x55abe135920f <unknown>\n#15 0x55abe13b0028 <unknown>\n#16 0x55abe13b01f7 <unknown>\n#17 0x55abe13c1ed4 <unknown>\n#18 0x7f0adac94ac3 <unknown>\n\n",
+  "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"UI-TESTS/steps/ahorcadosteps.py\", line 131, in ingresa_letra\n    elemento =  context.driver.find_element(By.NAME,\"input\")\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 741, in find_element\n    return self.execute(Command.FIND_ELEMENT, {\"using\": by, \"value\": value})[\"value\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 347, in execute\n    self.error_handler.check_response(response)\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[name=\"input\"]\"}\n  (Session info: chrome-headless-shell=120.0.6099.71); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n#0 0x55abe13c2d33 <unknown>\n#1 0x55abe107ff87 <unknown>\n#2 0x55abe10cfc0e <unknown>\n#3 0x55abe10cfd11 <unknown>\n#4 0x55abe111b004 <unknown>\n#5 0x55abe10f936d <unknown>\n#6 0x55abe1118297 <unknown>\n#7 0x55abe10f90e3 <unknown>\n#8 0x55abe10c1044 <unknown>\n#9 0x55abe10c244e <unknown>\n#10 0x55abe1387861 <unknown>\n#11 0x55abe138b785 <unknown>\n#12 0x55abe1375285 <unknown>\n#13 0x55abe138c41f <unknown>\n#14 0x55abe135920f <unknown>\n#15 0x55abe13b0028 <unknown>\n#16 0x55abe13b01f7 <unknown>\n#17 0x55abe13c1ed4 <unknown>\n#18 0x7f0adac94ac3 <unknown>\n\n",
+    "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"UI-TESTS/steps/ahorcadosteps.py\", line 131, in ingresa_letra\n    elemento =  context.driver.find_element(By.NAME,\"input\")\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 741, in find_element\n    return self.execute(Command.FIND_ELEMENT, {\"using\": by, \"value\": value})[\"value\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 347, in execute\n    self.error_handler.check_response(response)\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+    "steps" : [ {
+      "name" : "Given El jugador empieza el juego",
+      "time" : {
+        "start" : 1702861515872,
+        "stop" : 1702861516609,
+        "duration" : 737
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And El jugador ingresa la letra \"x\"",
+      "time" : {
+        "start" : 1702861516609,
+        "stop" : 1702861516621,
+        "duration" : 12
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[name=\"input\"]\"}\n  (Session info: chrome-headless-shell=120.0.6099.71); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n#0 0x55abe13c2d33 <unknown>\n#1 0x55abe107ff87 <unknown>\n#2 0x55abe10cfc0e <unknown>\n#3 0x55abe10cfd11 <unknown>\n#4 0x55abe111b004 <unknown>\n#5 0x55abe10f936d <unknown>\n#6 0x55abe1118297 <unknown>\n#7 0x55abe10f90e3 <unknown>\n#8 0x55abe10c1044 <unknown>\n#9 0x55abe10c244e <unknown>\n#10 0x55abe1387861 <unknown>\n#11 0x55abe138b785 <unknown>\n#12 0x55abe1375285 <unknown>\n#13 0x55abe138c41f <unknown>\n#14 0x55abe135920f <unknown>\n#15 0x55abe13b0028 <unknown>\n#16 0x55abe13b01f7 <unknown>\n#17 0x55abe13c1ed4 <unknown>\n#18 0x7f0adac94ac3 <unknown>\n\n",
+      "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"UI-TESTS/steps/ahorcadosteps.py\", line 131, in ingresa_letra\n    elemento =  context.driver.find_element(By.NAME,\"input\")\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 741, in find_element\n    return self.execute(Command.FIND_ELEMENT, {\"using\": by, \"value\": value})[\"value\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 347, in execute\n    self.error_handler.check_response(response)\n  File \"/opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "When El jugador reinicia el juego",
+      "time" : {
+        "start" : 1702861516622,
+        "stop" : 1702861516622,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then la palabra a adivinar debe mostrarse con guiones",
+      "time" : {
+        "start" : 1702861516622,
+        "stop" : 1702861516622,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And el numero de vidas debe ser 6",
+      "time" : {
+        "start" : 1702861516622,
+        "stop" : 1702861516622,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And las letras incorrectas deben estar vacias",
+      "time" : {
+        "start" : 1702861516622,
+        "stop" : 1702861516622,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Hangman Game"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "letra",
+    "value" : "x"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f5d64d893115f9b.json",
+  "parameterValues" : [ "x" ]
+}

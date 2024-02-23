@@ -1,0 +1,81 @@
+[ {
+  "uid" : "216d9d5f017ce89c",
+  "name" : "Adivinar una letra correcta -- @1.1 ",
+  "time" : {
+    "start" : 1708655960357,
+    "stop" : 1708655961468,
+    "duration" : 1111
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c23621c3005f5865",
+  "name" : "Reinicia el juego -- @1.2 ",
+  "time" : {
+    "start" : 1708655968275,
+    "stop" : 1708655969504,
+    "duration" : 1229
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b446a50f93dbd55",
+  "name" : "Empezar nuevo juego",
+  "time" : {
+    "start" : 1708655958518,
+    "stop" : 1708655960356,
+    "duration" : 1838
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4efcd1f99e9fda6f",
+  "name" : "Reinicia el juego -- @1.1 ",
+  "time" : {
+    "start" : 1708655966823,
+    "stop" : 1708655968274,
+    "duration" : 1451
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bfdf7683d29c99b1",
+  "name" : "Pierde el juego",
+  "time" : {
+    "start" : 1708655964880,
+    "stop" : 1708655966823,
+    "duration" : 1943
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "675fde80572a7615",
+  "name" : "Adivinar una letra correcta -- @1.2 ",
+  "time" : {
+    "start" : 1708655961468,
+    "stop" : 1708655962608,
+    "duration" : 1140
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "25130f044ccf72f1",
+  "name" : "Ingresar una letra incorrecta -- @1.1 ",
+  "time" : {
+    "start" : 1708655962609,
+    "stop" : 1708655963686,
+    "duration" : 1077
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c39b3339f56e895",
+  "name" : "Ingresar una letra incorrecta -- @1.2 ",
+  "time" : {
+    "start" : 1708655963686,
+    "stop" : 1708655964879,
+    "duration" : 1193
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
